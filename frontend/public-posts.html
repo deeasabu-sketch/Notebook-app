@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Public posts · Secure Notes</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/api.js"></script>
+  <script defer src="/js/public-posts.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">Secure Notes</a>
+    <nav class="actions"><a href="/login.html">Log in</a><a class="btn" href="/register.html">Create account</a></nav>
+  </header>
+  <main class="container">
+    <h1>Public posts</h1>
+    <p class="muted">Posts shared by Secure Notes users.</p>
+    <p data-feed-message class="message" aria-live="polite"></p>
+    <div data-feed class="grid" aria-live="polite">Loading posts…</div>
+    <div class="actions pager">
+      <button data-feed-prev class="secondary">Previous</button>
+      <span data-feed-page></span>
+      <button data-feed-next class="secondary">Next</button>
+    </div>
+  </main>
+</body>
+</html>
